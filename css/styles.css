@@ -161,9 +161,14 @@ body {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4)) 100%,
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
     url(../images/foto3/hero.jpg);
-  background: #c4c4c4;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .hero-title {
   margin: 0 auto;
@@ -218,6 +223,7 @@ body {
 }
 .item-features::before {
   display: block;
+  margin-bottom: 30px;
   content: '';
   height: 120px;
   background-size: contain;
@@ -225,6 +231,7 @@ body {
   background-position: center;
   background-color: var(--secondary-background-color);
 }
+
 .icon-antenna::before {
   background-image: url(../images/foto3/antenna.svg);
 }
@@ -252,7 +259,7 @@ body {
   margin-bottom: 0;
   font-weight: normal;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.7;
   color: var(--secondary-text-color);
 }
 
@@ -273,6 +280,8 @@ body {
   background-color: var(--secondary-background-color);
 }
 .team-name {
+  margin-bottom: 10px;
+  margin-top: 0;
   font-style: 400px;
   font-weight: 500;
   font-size: 16px;
@@ -282,6 +291,7 @@ body {
   color: var(--primary-text-color);
 }
 .prof-item {
+  margin: 0;
   font-weight: 400px;
   font-size: 16px;
   line-height: 1.19;
@@ -303,6 +313,9 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+.content-card {
+  padding: 30px 50px;
 }
 
 /*buttons*/
@@ -349,7 +362,17 @@ body {
   padding-right: 24px;
   padding-top: 20px;
   padding-bottom: 20px;
-  border: 1px solid #eeeeee;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #eeeeee;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #eeeeee;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #eeeeee;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 
 .work-title {
@@ -381,14 +404,16 @@ body {
 .card-item {
   margin-top: 30px;
   margin-left: 30px;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
   flex-basis: calc((100% - 3 * 30px) / 3);
 }
 .card-item:hover,
 .card-item:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
 }
+
 /*Footer*/
 .section-footer {
   padding-top: 60px;
