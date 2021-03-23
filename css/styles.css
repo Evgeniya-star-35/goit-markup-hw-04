@@ -305,6 +305,12 @@ body {
 .content-card {
   padding: 30px 10px;
 }
+.social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 30px;
+}
 /*Clients*/
 .list-clients {
   display: flex;
