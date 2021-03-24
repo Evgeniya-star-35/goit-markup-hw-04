@@ -108,15 +108,20 @@ body {
 .contact {
   display: flex;
   margin-left: auto;
-  margin-top: 0;
-  margin-bottom: 0;
 }
-
-.contact .item + .item {
-  margin-left: 50px;
+.email-list {
+  display: flex;
+  margin-right: 30px;
 }
-.icon-contect:hover .icon-email {
-  fill: var(--accent-background-color);
+.email-list .item {
+  margin-right: 10px;
+}
+.tel-list {
+  display: flex;
+  margin-right: 0;
+}
+.tel-list .item {
+  margin-right: 10px;
 }
 
 .logo {
