@@ -7,6 +7,7 @@
   --accent-background-color: #2196f3;
   --button-hero-text-color: #ffffff;
   --bg-hero-color: #2f303a;
+  --client-color-icon: #afb1b8;
 }
 /* цвет основного текста #212121 */
 /* вторичный цвет текста #757575 */
@@ -156,6 +157,17 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+}
+.icon-email,
+.icon-tel {
+  fill: var(--secondary-text-color);
+}
+
+.icon-email:hover,
+.icon-email:focus,
+.icon-tel:hover,
+.icon-tel:focus {
+  fill: var(--accent-color);
 }
 
 /*герой*/
@@ -323,6 +335,24 @@ body {
   align-items: center;
   padding-bottom: 30px;
 }
+.item-social {
+  width: 44px;
+  height: 44px;
+}
+.social-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  fill: var(--client-color-icon);
+  border-color: var(--primery-white-color);
+}
+.social-link:hover,
+.social-link:focus {
+  fill: var(--primery-white-color);
+  background-color: var(--accent-color);
+}
+
 /*Clients*/
 .list-clients {
   display: flex;
@@ -331,21 +361,21 @@ body {
 .item-client {
   width: 170px;
   height: 90px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
 }
 .link-client {
-  width: 100%;
-  height: 100%;
-}
-
-.icon-client {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
+  fill: var(--client-color-icon);
+}
+.link-client:hover,
+.link-client:focus {
+  border: 1px solid var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /*buttons*/
