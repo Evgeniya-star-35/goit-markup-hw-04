@@ -110,6 +110,10 @@ body {
   display: flex;
   margin-left: auto;
 }
+.contact-icon {
+  display: block;
+  align-items: center;
+}
 .email-list {
   display: flex;
   margin-right: 30px;
@@ -346,13 +350,17 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  fill: var(--client-color-icon);
-  background-color: #fff;
+  color: var(--client-color-icon);
 }
 .social-link:hover,
 .social-link:focus {
-  fill: var(--primery-white-color);
+  color: var(--primery-white-color);
   background-color: var(--accent-background-color);
+}
+.icon-link {
+  width: 44px;
+  height: 44px;
+  fill: currentColor;
 }
 
 /*Clients*/
@@ -535,9 +543,11 @@ body {
   color: var(--button-hero-text-color);
 }
 .link-footer {
+  display: flex;
   width: 100%;
   height: 100%;
   border-radius: 50%;
+  color: var(--primery-white-color);
   background-color: rgba(255, 255, 255, 0.1);
 }
 .link-footer:hover,
@@ -545,5 +555,7 @@ body {
   background-color: var(--accent-background-color);
 }
 .footer-icon {
-  fill: var(--primery-white-color);
+  width: 44px;
+  height: 44px;
+  fill: currentColor;
 }
