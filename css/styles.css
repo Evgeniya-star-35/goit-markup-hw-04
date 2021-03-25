@@ -118,14 +118,14 @@ body {
   display: flex;
   margin-right: 30px;
 }
-.email-list .item {
+.email-list > .item:not(:last-child) {
   margin-right: 10px;
 }
 .tel-list {
   display: flex;
   margin-right: 0;
 }
-.tel-list .item {
+.tel-list > .item:not(:last-child) {
   margin-right: 10px;
 }
 
