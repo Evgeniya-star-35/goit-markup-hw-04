@@ -147,6 +147,23 @@ body {
 .span-studio {
   color: var(--primary-text-color);
 }
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+}
+.contact > .item:not(:last-child) {
+  margin-right: 30px;
+}
+.email-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tel-contact {
+  display: flex;
+}
 .link-item {
   font-weight: 500;
   font-size: 14px;
@@ -164,7 +181,8 @@ body {
 }
 .icon-email,
 .icon-tel {
-  fill: var(--secondary-text-color);
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 .icon-email:hover,
