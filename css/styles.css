@@ -3,6 +3,7 @@
   --secondary-text-color: #757575;
   --accent-color: #2196f3;
   --primery-white-color: #ffffff;
+  --bg-color: #e5e5e5;
   --secondary-background-color: #f5f4fa;
   --accent-background-color: #2196f3;
   --button-hero-text-color: #ffffff;
@@ -89,9 +90,9 @@ body {
 }
 
 .header-section {
-  background-color: var(--primery-white-color);
   border-bottom: 1px solid #ececec;
 }
+
 .header-nav {
   display: flex;
   align-items: center;
@@ -494,6 +495,7 @@ body {
   padding-bottom: 60px;
   background-color: var(--bg-hero-color);
 }
+
 .contact-footer {
   display: flex;
   align-items: baseline;
