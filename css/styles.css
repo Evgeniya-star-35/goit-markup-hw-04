@@ -510,6 +510,12 @@ body {
 
 .span-studio-footer {
   color: var(--button-hero-text-color);
+  font-family: Raleway;
+  font-weight: 700px;
+  font-size: 26px;
+  line-height: 1, 19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 }
 .address {
   font-size: 14px;
