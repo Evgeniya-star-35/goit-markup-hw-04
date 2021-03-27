@@ -496,15 +496,22 @@ body {
   background-color: var(--bg-hero-color);
 }
 
-.contact-footer {
+.web-list {
   display: flex;
   align-items: baseline;
 }
 
-.social-link-footer {
-  margin-left: 70px;
-  margin-right: auto;
+.web-item-one {
+  display: block;
+  margin-right: 30px;
+  flex-basis: calc((50% - 45px) / 2);
 }
+.web-item-two {
+  display: block;
+  margin-right: 30px;
+  flex-basis: calc((50% - 45px) / 2);
+}
+
 .logo-footer {
   display: block;
   margin-bottom: 20px;
