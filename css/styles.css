@@ -567,6 +567,9 @@ body {
   text-transform: uppercase;
   color: var(--button-hero-text-color);
 }
+.footer-list {
+  justify-content: flex-start;
+}
 .link-footer {
   display: flex;
   justify-content: center;
